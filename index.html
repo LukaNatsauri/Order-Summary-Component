@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Order Summary Component</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Red Hat Display"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url("pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-color: hsl(225, 100%, 94%);
+        font-family: "Red Hat Display", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+      }
+
+      .card {
+        width: 450px;
+        border-radius: 20px;
+        background-color: white;
+        overflow: hidden;
+      }
+
+      h1 {
+        font-weight: 900;
+        color: #1f2e55;
+        font-size: 28px;
+        margin-top: 45px;
+        margin-bottom: 17px;
+      }
+
+      .order-header p {
+        font-size: 16px;
+        color: #717fa6;
+        font-weight: 500;
+        line-height: 26px;
+      }
+
+      .plan-card {
+        display: flex;
+        align-items: center;
+        border-radius: 11px;
+        background-color: #f7f9ff;
+        margin-left: 48px;
+        margin-right: 48px;
+        width: 354px;
+        height: 98px;
+      }
+
+      .music-icon {
+        width: 48px;
+        height: 48px;
+        margin-left: 24px;
+        margin-right: 20px;
+      }
+
+      .plan-info {
+        line-height: 6px;
+      }
+
+      h2 {
+        font-weight: 900;
+        font-size: 16px;
+        color: #1f2e55;
+      }
+
+      a {
+        margin-left: 94px;
+        color: #382ae1;
+        font-weight: 700;
+        font-size: 14px;
+      }
+
+      .payment-button {
+        width: 354px;
+        height: 50px;
+        border-radius: 11px;
+        background: #382ae1;
+        color: white;
+        font-weight: 900;
+        font-size: 15px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        border: none;
+      }
+
+      .cancel-button {
+        background: white;
+        border: none;
+        font-size: 15px;
+        margin-bottom: 48px;
+        color: #717fa6;
+      }
+
+      a,
+      .payment-button,
+      .cancel-button {
+        cursor: pointer;
+      }
+
+      a:hover {
+        color: #766cf1;
+      }
+
+      .payment-button:hover {
+        background: #766cf1;
+      }
+
+      .cancel-button:hover {
+        color: #1f2e55;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      <img src="illustration-hero.svg" />
+      <div class="order-header">
+        <h1>Order Summary</h1>
+        <p>
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+      </div>
+      <div class="plan-card">
+        <img src="icon-music.svg" class="music-icon" />
+        <div class="plan-info">
+          <h2>Annual Plan</h2>
+          <p>$59.99/year</p>
+        </div>
+        <a href="#">Change</a>
+      </div>
+      <button type="button" class="payment-button">
+        Proceed to Payment
+      </button>
+      <button type="button" class="cancel-button">Cancel Order</button>
+    </div>
+  </body>
+</html>
